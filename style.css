@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: "Times New Roman", Times, serif; */
+}
+
+body {
+  background-color: rgb(2, 2, 59);
+  color: white;
+  /* font-family: sans-serif; */
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Header container */
+
+#nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  padding: 10px;
+  background-color: rgb(88, 26, 203);
+  font-size: 22px;
+}
+
+.shivam-header-text {
+  position: relative;
+  bottom: 10px;
+  left: 20px;
+}
+
+#shivam-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header > ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.right-header-li {
+  list-style-type: none;
+}
+
+ul li .nav-container-right-li-link {
+  text-decoration: none;
+  color: white;
+}
+
+ul > li > a:hover {
+  color: rgb(221, 167, 167);
+  text-shadow: 5px yellow;
+  text-underline-offset: 3px;
+  font-size: 24px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* First container   */
+
+#first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  font-size: 44px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#first-container > .first-sub-section {
+  height: 350px;
+  width: 30%;
+  margin: 50px auto;
+  /* background-color: red; */
+}
+
+.left-section-text {
+  margin: 52px auto;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  /* position: relative;
+  top: 80px; */
+}
+
+#left-section > .left-section-text {
+  position: relative;
+  top: 50px;
+}
+
+#right-section {
+  margin: 0px;
+}
+
+.first-container-right-section-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 2px yellow;
+}
+
+.name-text {
+  color: rgb(192, 57, 192);
+}
+
+/* Media query  */
+
+@media screen and (max-width: 800px) {
+  #first-container {
+    font-size: 30px;
+  }
+}
+
+/* @media screen and (max-width: 1075px) {
+  #second-container {
+    height: 110vh;
+  }
+
+  .W-E-content-texts {
+    font-size: 10px;
+    color: rgb(247, 244, 241);
+  }
+} */
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* Typed JS */
+
+#element {
+  color: rgb(192, 57, 192);
+}
+
+/* hr tag */
+
+hr {
+  background: #aea3b040;
+  height: 1px;
+  border: none;
+  margin: 40px 62px;
+}
+
+/* Second - container */
+
+#second-container,
+#third-container {
+  width: 85%;
+  margin: auto;
+  height: 85vh;
+
+  /* height: 100px; */
+}
+
+/* Logo container */
+
+.W-E-logos-img {
+  height: 40px;
+  width: 40px;
+
+  border-radius: 10px;
+}
+
+.logos {
+  position: relative;
+  right: 7.3%;
+}
+
+/* ------------------------------------------------------------ */
+
+#work-experience-header,
+.headers {
+  font-weight: bolder;
+  font-size: 32px;
+  margin-bottom: 60px;
+  /* margin-bottom for making space below it for the container */
+}
+
+#work-experience-line-container,
+#W-E-Content-Container,
+#logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-around;
+  width: 90%;
+  position: relative;
+
+  left: 12%;
+}
+
+#experience-hr {
+  margin: 0px 62px 0px 62px;
+  height: 3px;
+  background: rgb(245, 240, 240);
+}
+
+.fifth-experience {
+  width: 0%;
+}
+
+#work-experience-line-container > .experiences {
+  width: 15%;
+  height: 200px;
+  /* margin: auto 50px; */
+  /* background-color: bisque; */
+
+  border-left: solid 2px rgb(245, 240, 240);
+}
+
+.contents {
+  margin: 20px 10px 0px 0px;
+  font-size: 11px;
+}
+
+#W-E-Content-Container > .contents {
+  width: 15%;
+  height: 200px;
+
+  /* margin: auto 50px; */
+  /* background-color: bisque; */
+}
+
+/*  */
+
+.dates {
+  font-size: 14px;
+  color: rgb(243, 217, 184);
+}
+
+.exp-header {
+  color: rgb(243, 217, 184);
+}
+
+.W-E-content-texts {
+  font-size: 13px;
+  color: rgb(247, 244, 241);
+}
+/* Media Query  of header & manages the font-size at 450 px ofwidth */
+
+@media screen and (max-width: 450px) {
+  #first-container {
+    font-size: 18px;
+  }
+
+  #work-experience-header {
+    font-size: 22px;
+    font-weight: bolder;
+  }
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1085px) {
+  #second-container {
+    height: 80vh;
+  }
+
+  .W-E-content-texts {
+    font-size: 11px;
+    color: rgb(247, 244, 241);
+  }
+}
+
+/* Contatct Container  */
+
+#contact-container {
+  height: 110vh;
+  width: 85%;
+}
+
+#contact-container-form-address {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin: 90px auto;
+  gap: 5%;
+}
+
+.form-address-group {
+  width: 35%;
+}
+
+.contact-icon-img {
+  height: 40px;
+  width: 40px;
+
+  border-radius: 50%;
+  border: solid 4px rgb(232, 228, 235);
+}
+
+.contact-icons {
+  /* display: flex; */
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  margin-top: 7px;
+  padding: 5px;
+  color: rgb(160, 150, 150);
+  background-color: rgb(3, 61, 61);
+  border: solid 3px rgb(220, 220, 9);
+  border-radius: 20px;
+}
+
+.contact-input {
+  width: 70%;
+  height: 30px;
+  margin-top: 5px;
+  color: rgb(150, 96, 96);
+}
+
+.contact-icons > .contact-icon-texts {
+  margin: 0px 20px 20px 10px;
+  width: 70%;
+  /* bottom: 20px; */
+  width: 70%;
+  /* text-overflow: clip; */
+  font-size: 14px;
+}
+
+/* #contact-icon-container {
+  background-color: white;
+  border: solid 3px yellow;
+} */
+
+.textarea-input {
+  width: 70%;
+  margin-top: 5px;
+  color: black;
+}
+
+#get-in-touch-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+  position: relative;
+  bottom: 50px;
+}
+
+.contact-submit-btn {
+  width: 30%;
+  margin-top: 1px;
+  height: 30px;
+  background-color: rgb(105, 167, 12);
+}
